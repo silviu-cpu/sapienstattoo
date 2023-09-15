@@ -30,7 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              {
+                "input": "src/theme.scss",
+                "bundleName": "bootstrap4-dark-purple",
+                "inject": true
+              }
             ],
             "scripts": []
           },
@@ -100,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "5ed09cad-32d7-4fde-8e42-230ebd82eeb5"
   }
 }
