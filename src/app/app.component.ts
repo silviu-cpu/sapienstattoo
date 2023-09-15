@@ -13,91 +13,111 @@ export class AppComponent {
   ngOnInit() {
     this.items = [
         {
+            label:'Home',
+            routerLink: "home"
+        },
+        {
             label: 'Categorii Tatuaje',
             items: [
                 {
                     label: 'Tatuaje Mici',
-                    routerLink: "home"
+                    routerLink: "tatuaje-mici"
                 },
                 {
                     label: 'Tatuaje Mari',
+                    routerLink: "tatuaje-mari"
                 },
                 {
                     label: 'Tatuaje Medii',
+                    routerLink: "tatuaje-medii"
                 },
                 {
                     separator: true
                 },
                 {
                     label: 'Tatuaje Black And Gray',
+                    routerLink: "black-and-gray"
                 },
                 {
                     label: 'Tatuaje Color',
+                    routerLink: "color"
                 },
                 {
                     separator: true
                 },
                 {
                     label: 'Tatuaje Fete',
+                    routerLink: "fete"
                 },
                 {
                     label: 'Tatuaje Baieti',
+                    routerLink: "baieti"
                 },
                 {
                     separator: true
                 },
                 {
                     label: 'Tatuaje Portret',
+                    routerLink: "portret"
                 },
                 {
                     label: 'Tatuaje Geometrice',
+                    routerLink: "geometrice"
                 },
                 {
                     label: 'Tatuaje Liniare',
+                    routerLink: "liniare"
                 },
                 {
                     separator: true
                 }, 
                 {
                     label: 'Tatuaje Custom',
+                    routerLink: "custom"
                 },
                 {
                     label: 'Tatuaje Sketch',
+                    routerLink: "sketch"
                 },
                 {
                     separator: true
                 },
                 {
                     label: 'Tatuaje Animale',
+                    routerLink: "animale"
                 },
                 {
                     label: 'Tatuaje Anime Cartoon',
+                    routerLink: "anime-cartoon"
                 },
                 {
                     separator: true
                 },
                 {
                     label: 'Match Tattoos',
+                    routerLink: "match"
                 },
                 {
                     label: 'Tatuaje scris',
+                    routerLink: "scris"
                 }
             ]
         },
         {
             label: 'Piercing',
+            routerLink: "piercing"
         },
         {
             label: 'Echipa',
+            routerLink: "echipa"
         },
         {
             label: 'Contact',
+            routerLink: "contact"
         }, 
         {
-            label: 'Blog',
-            icon: 'pi pi-fw pi-user',
+            label: 'Blog - Coming Soon',
             disabled: true,
-            tooltip: 'Coming Soon'
         },
     ];
 }

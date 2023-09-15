@@ -105,6 +105,8 @@ import { AnimeCartoonComponent } from './anime-cartoon/anime-cartoon.component';
 import { MatchComponent } from './match/match.component';
 import { ScrisComponent } from './scris/scris.component';
 import { ContactComponent } from './contact/contact.component';
+import { PiercingComponent } from './piercing/piercing.component';
+import { EchipaComponent } from './echipa/echipa.component';
 
 @NgModule({
   declarations: [
@@ -128,7 +130,9 @@ import { ContactComponent } from './contact/contact.component';
     AnimeCartoonComponent,
     MatchComponent,
     ScrisComponent,
-    ContactComponent
+    ContactComponent,
+    PiercingComponent,
+    EchipaComponent
   ],
   imports: [
     BrowserModule,
