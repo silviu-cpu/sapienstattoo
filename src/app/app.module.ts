@@ -88,13 +88,47 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
 import { HomeComponent } from './home/home.component';
 import { GoogleReviewsComponent } from './google-reviews/google-reviews.component';
 import { InstagramPostsComponent } from './instagram-posts/instagram-posts.component';
+import { TatuajeMiciComponent } from './tatuaje-mici/tatuaje-mici.component';
+import { TatuajeMariComponent } from './tatuaje-mari/tatuaje-mari.component';
+import { TatuajeMediiComponent } from './tatuaje-medii/tatuaje-medii.component';
+import { BlackAndGrayComponent } from './black-and-gray/black-and-gray.component';
+import { ColorComponent } from './color/color.component';
+import { FeteComponent } from './fete/fete.component';
+import { BaietiComponent } from './baieti/baieti.component';
+import { PortretComponent } from './portret/portret.component';
+import { GeometriceComponent } from './geometrice/geometrice.component';
+import { LiniareComponent } from './liniare/liniare.component';
+import { CustomComponent } from './custom/custom.component';
+import { SketchComponent } from './sketch/sketch.component';
+import { AnimaleComponent } from './animale/animale.component';
+import { AnimeCartoonComponent } from './anime-cartoon/anime-cartoon.component';
+import { MatchComponent } from './match/match.component';
+import { ScrisComponent } from './scris/scris.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     GoogleReviewsComponent,
-    InstagramPostsComponent
+    InstagramPostsComponent,
+    TatuajeMiciComponent,
+    TatuajeMariComponent,
+    TatuajeMediiComponent,
+    BlackAndGrayComponent,
+    ColorComponent,
+    FeteComponent,
+    BaietiComponent,
+    PortretComponent,
+    GeometriceComponent,
+    LiniareComponent,
+    CustomComponent,
+    SketchComponent,
+    AnimaleComponent,
+    AnimeCartoonComponent,
+    MatchComponent,
+    ScrisComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -17,7 +17,7 @@ export class AppComponent {
             items: [
                 {
                     label: 'Tatuaje Mici',
-                    expanded: true
+                    routerLink: "home"
                 },
                 {
                     label: 'Tatuaje Mari',
@@ -63,9 +63,6 @@ export class AppComponent {
                 },
                 {
                     label: 'Tatuaje Sketch',
-                },
-                {
-                    label: 'Tatuaje Liniare',
                 },
                 {
                     separator: true
