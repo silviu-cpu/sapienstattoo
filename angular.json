@@ -37,9 +37,7 @@
                 "inject": true
               }
             ],
-            "scripts": [
-              "node_modules/@angular/google-maps/bundles/google-maps.umd.min.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
