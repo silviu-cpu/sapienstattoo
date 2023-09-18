@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class ContactComponent {
   display: any
   center: google.maps.LatLngLiteral = {lat:44.423948, lng:26.158262}
-  zoom = 4
+  zoom = 14
   markerPosition: google.maps.LatLngLiteral = { lat: 44.423948, lng: 26.158262 };
 
   moveMap(event: google.maps.MapMouseEvent) {
