@@ -107,6 +107,8 @@ import { ScrisComponent } from './scris/scris.component';
 import { ContactComponent } from './contact/contact.component';
 import { PiercingComponent } from './piercing/piercing.component';
 import { EchipaComponent } from './echipa/echipa.component';
+import { CategoriiTatuajeComponent } from './categorii-tatuaje/categorii-tatuaje.component';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 @NgModule({
   declarations: [
@@ -132,13 +134,15 @@ import { EchipaComponent } from './echipa/echipa.component';
     ScrisComponent,
     ContactComponent,
     PiercingComponent,
-    EchipaComponent
+    EchipaComponent,
+    CategoriiTatuajeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MenubarModule,
     MenuModule,
+    GoogleMapsModule,
     AvatarModule,
     AvatarGroupModule,
     BrowserModule,

@@ -21,6 +21,7 @@ import { PiercingComponent } from './piercing/piercing.component';
 import { ContactComponent } from './contact/contact.component';
 import { EchipaComponent } from './echipa/echipa.component';
 
+
 const routes: Routes = [
   {
     path: '',
