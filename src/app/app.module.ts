@@ -108,7 +108,8 @@ import { ContactComponent } from './contact/contact.component';
 import { PiercingComponent } from './piercing/piercing.component';
 import { EchipaComponent } from './echipa/echipa.component';
 import { CategoriiTatuajeComponent } from './categorii-tatuaje/categorii-tatuaje.component';
-import { GoogleMapsModule } from '@angular/google-maps'
+import { GoogleMapsModule } from '@angular/google-maps';
+import { ToateCategoriileComponent } from './toate-categoriile/toate-categoriile.component'
 
 @NgModule({
   declarations: [
@@ -136,6 +137,7 @@ import { GoogleMapsModule } from '@angular/google-maps'
     PiercingComponent,
     EchipaComponent,
     CategoriiTatuajeComponent,
+    ToateCategoriileComponent,
   ],
   imports: [
     BrowserModule,
