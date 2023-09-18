@@ -1,6 +1,9 @@
 <div class="grid">
     <div class="col-3" *ngFor="let review of reviews">
       <div class="card">
+        <div *ngIf="review.profile_photo_url" class="p-card-header">
+            <img [src]="review.profile_photo_url" alt="Profile Photo">
+          </div>
         <div class="card-header">
           Author: {{ review.author_name }}
         </div>
