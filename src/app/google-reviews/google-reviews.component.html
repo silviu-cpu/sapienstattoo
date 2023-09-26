@@ -1,6 +1,9 @@
-<div class="grid">
-    <div class="col-3" *ngFor="let review of reviews">
-      <div class="card">
+<div class="flex justify-content-center">
+  <h2>Vorbeste lumea, pe google!</h2>
+</div>
+<div class="grid justify-content-center mt-6">
+    <div class="lg:col-2 sm:col-12 md:col-12 " *ngFor="let review of reviews">
+      <p-card>
         <div *ngIf="review.profile_photo_url" class="p-card-header">
             <img [src]="review.profile_photo_url" alt="Profile Photo">
           </div>
@@ -17,7 +20,7 @@
         <div>
             Go to review : <a href="{{ review.author_url }}" target="_blank">Go To Review</a>
         </div>
-      </div>
+      </p-card>
     </div>
   </div>
   

@@ -20,6 +20,7 @@ import { ScrisComponent } from './scris/scris.component';
 import { PiercingComponent } from './piercing/piercing.component';
 import { ContactComponent } from './contact/contact.component';
 import { EchipaComponent } from './echipa/echipa.component';
+import { ToateCategoriileComponent } from './toate-categoriile/toate-categoriile.component';
 
 
 const routes: Routes = [
@@ -194,6 +195,14 @@ const routes: Routes = [
     component: EchipaComponent,
     data: {
       title: 'Echipa | Sapiens Tattoo'
+    }
+  },
+  {
+    path: 'toate-categoriile',
+    pathMatch: 'full',
+    component: ToateCategoriileComponent,
+    data: {
+      title: 'Categorii | Sapiens Tattoo'
     }
   }
 

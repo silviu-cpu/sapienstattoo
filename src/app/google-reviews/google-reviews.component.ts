@@ -16,9 +16,9 @@ export class GoogleReviewsComponent {
 
     this.http.get(serverEndpoint).subscribe(
       (data: any) => {
-        if (data.result && data.result.reviews) {
-          this.reviews = data.result.reviews;
-          console.log(data.result)
+        console.log(data.reviews)
+        if (data && data.reviews) {
+          this.reviews = data.reviews;
         }
       },
       (error) => {
@@ -26,5 +26,6 @@ export class GoogleReviewsComponent {
       }
     );
     
+  
   }
 }
