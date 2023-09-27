@@ -1,0 +1,33 @@
+.title {
+    font-size:38px;
+    color: #B68116;
+}
+
+.phone {
+    font-size:38px;
+    text-decoration: underline;
+}
+
+.address {
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size:30px;  
+    }
+    
+    .phone {
+        font-size:30px;
+    }   
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size:26px;
+    }
+    
+    .phone {
+        font-size:26px;
+    }   
+}

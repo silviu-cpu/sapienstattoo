@@ -1,16 +1,14 @@
 <div class="grid">
-    <div class="col-6">
-        Contact
-        <a
-  href="https://wa.me/+40732087298/?text=Hello%20there!"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button>Open WhatsApp</button>
-</a>
+    <div class="lg:col-6 sm:col-12 md:col-12 flex align-items-center justify-content-center flex-column">
+        <div class="title mb-2">Contact</div>
+        <div class="phone">0737 689 330</div>
+        <div class="m-6">SocialLinksz</div>
+        <div class="title mt-6 mb-2">Adresa</div>
+        <div class="address">Liviu Rebreanu 6, Bloc B1, scara B, ap.310</div>
+        <div class="address">Sector 3, Bucuresti</div>
     </div>
-    <div class="col-6">
-        <google-map height="400px" width="750px" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)" (mapMousemove)="move($event)">
+    <div class="lg:col-6 sm:col-12 md:col-12 mt-6">
+        <google-map height="100%" width="70%" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)" (mapMousemove)="move($event)">
              <map-marker [position]="markerPosition"></map-marker>
         </google-map>
     </div>
