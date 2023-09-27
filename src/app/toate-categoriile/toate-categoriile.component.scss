@@ -1,0 +1,32 @@
+.category-item {
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.category-item:hover {
+    background-color: #B68116;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    border-color: #B68116;
+    color: #000;
+    font-weight: 700;
+}
+
+@media (max-width: 576px) {
+    .category-item {
+        flex: 0 0 auto;
+        padding: 0.5rem;
+        width: 100%;
+    }
+}
+
+.title {
+    color:#B68116;
+}
+
+a {
+    text-decoration: none;
+}
+
