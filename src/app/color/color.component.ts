@@ -13,111 +13,115 @@ interface Item {
 export class ColorComponent {
   data: Item[] = [
     {
-      imageSrc: "../../assets/BlackAndGray/1.jpg", 
+      imageSrc: "../../assets/Color/1.jpg", 
       imageAlt: "Photo 1"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/3.jpg", 
+      imageSrc: "../../assets/Color/2.jpg", 
+      imageAlt: "Photo 2"
+    },
+    {
+      imageSrc: "../../assets/Color/3.jpg", 
       imageAlt: "Photo 3"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/4.jpg", 
+      imageSrc: "../../assets/Color/4.jpg", 
       imageAlt: "Photo 4"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/5.jpg", 
+      imageSrc: "../../assets/Color/5.jpg", 
       imageAlt: "Photo 5"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/6.jpg", 
+      imageSrc: "../../assets/Color/6.jpg", 
       imageAlt: "Photo 6"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/7.jpg", 
+      imageSrc: "../../assets/Color/7.jpg", 
       imageAlt: "Photo 7"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/8.jpg", 
+      imageSrc: "../../assets/Color/8.jpg", 
       imageAlt: "Photo 8"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/9.jpg", 
+      imageSrc: "../../assets/Color/9.jpg", 
       imageAlt: "Photo 9"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/10.jpg", 
+      imageSrc: "../../assets/Color/10.jpg", 
       imageAlt: "Photo 10"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/11.jpg", 
+      imageSrc: "../../assets/Color/11.jpg", 
       imageAlt: "Photo 11"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/12.jpg", 
+      imageSrc: "../../assets/Color/12.jpg", 
       imageAlt: "Photo 12"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/13.jpg", 
+      imageSrc: "../../assets/Color/13.jpg", 
       imageAlt: "Photo 13"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/14.jpg", 
+      imageSrc: "../../assets/Color/14.jpg", 
       imageAlt: "Photo 14"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/15.jpg", 
+      imageSrc: "../../assets/Color/15.jpg", 
       imageAlt: "Photo 15"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/16.jpg", 
+      imageSrc: "../../assets/Color/16.jpg", 
       imageAlt: "Photo 16"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/17.jpg", 
+      imageSrc: "../../assets/Color/17.jpg", 
       imageAlt: "Photo 17"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/18.jpg", 
+      imageSrc: "../../assets/Color/18.jpg", 
       imageAlt: "Photo 18"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/19.jpg", 
+      imageSrc: "../../assets/Color/19.jpg", 
       imageAlt: "Photo 19"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/20.jpg", 
+      imageSrc: "../../assets/Color/20.jpg", 
       imageAlt: "Photo 20"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/21.jpg", 
+      imageSrc: "../../assets/Color/21.jpg", 
       imageAlt: "Photo 21"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/22.jpg", 
+      imageSrc: "../../assets/Color/22.jpg", 
       imageAlt: "Photo 22"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/23.jpg", 
+      imageSrc: "../../assets/Color/23.jpg", 
       imageAlt: "Photo 23"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/24.jpg", 
+      imageSrc: "../../assets/Color/24.jpg", 
       imageAlt: "Photo 24"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/25.jpg", 
+      imageSrc: "../../assets/Color/25.jpg", 
       imageAlt: "Photo 25"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/26.jpg", 
+      imageSrc: "../../assets/Color/26.jpg", 
       imageAlt: "Photo 26"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/27.jpg", 
+      imageSrc: "../../assets/Color/27.jpg", 
       imageAlt: "Photo 27"
     },
     {
-      imageSrc: "../../assets/BlackAndGray/28.jpg", 
+      imageSrc: "../../assets/Color/28.jpg", 
       imageAlt: "Photo 28"
     }
   ];

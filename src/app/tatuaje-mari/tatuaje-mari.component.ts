@@ -17,6 +17,10 @@ export class TatuajeMariComponent {
       imageAlt: "Photo 1"
     },
     {
+      imageSrc: "../../assets/Mari/2.jpg", 
+      imageAlt: "Photo 2"
+    },
+    {
       imageSrc: "../../assets/Mari/3.jpg", 
       imageAlt: "Photo 3"
     },

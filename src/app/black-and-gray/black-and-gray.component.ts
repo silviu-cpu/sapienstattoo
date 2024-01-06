@@ -18,6 +18,10 @@ export class BlackAndGrayComponent {
       imageAlt: "Photo 1"
     },
     {
+      imageSrc: "../../assets/BlackAndGray/2.jpg", 
+      imageAlt: "Photo 2"
+    },
+    {
       imageSrc: "../../assets/BlackAndGray/3.jpg", 
       imageAlt: "Photo 3"
     },
