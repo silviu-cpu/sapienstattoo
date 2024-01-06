@@ -1,0 +1,45 @@
+.gray {
+    color: gray;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.title {
+    color:#B68116;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.subtitle {
+    font-size: 52px;
+    font-weight: 400;
+}
+
+.subtitle2 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.text {
+    font-size: 24px;
+}
+
+span {
+    font-weight: bold;
+    color: #B68116;
+}
+
+@media (max-width: 576px) {
+    img {
+      margin-top: 40px;
+    }
+}
+
+hr {
+    transform: rotate(-3deg);
+    transform-origin: top right;
+    margin-bottom: 140px;
+}
