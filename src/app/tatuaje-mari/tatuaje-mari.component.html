@@ -1,63 +1,38 @@
 <div class="grid flex align-items-center m-4">
-    <div class="lg:col-8 md:col-8 sm:col-12">
-        <h1 class="title mb-2">Tatuaje Mari</h1>
-        <h1 class="subtitle mb-2">Full day session +</h1>
-        <h1 class="subtitle2 mb-6">O Expresie a Individualității</h1>
+  <div class="lg:col-8 md:col-8 sm:col-12">
+    <h1 class="title mb-2">Tatuaje Mari</h1>
+    <h1 class="subtitle mb-2">Full day session +</h1>
+    <h1 class="subtitle2 mb-6">O Expresie a Individualității</h1>
 
-    
-        <div class="text mb-4">Tatuajele mari sunt o modalitate captivantă de a vă exprima <span>creativitatea</span> și de a vă sublinia <span>personalitatea.</span></div>
-        <div class="text mb-4">Tatuajele mari pot fi dintre cele mai complexe. Intră la <span>„full day”,</span> adică o zi sau chiar mai multe pe care le dedici ședintelor de tatuat. <span>Fără grabă</span> sau treburi random de rezolvat înainte sau după ori văitat inutil. </div>
-        <div class="text">Deoarece avem un scop comun: tatuajul tău să fie terminat în <span>cea mai bună versiune posibilă,</span> este necesar să fii în cea mai bună formă a ta într-o asemenea zi. Află aici cum… LINK - catre ce ?????? nece?</div>
+    <div class="text mb-4">
+      Tatuajele mari sunt o modalitate captivantă de a vă exprima
+      <span>creativitatea</span> și de a vă sublinia
+      <span>personalitatea.</span>
     </div>
-    <div class="lg:col-3 md:col-3 sm:col-12 flex align-items-center justify-content-center">
-        <img src="../../assets/MARI.png" alt="tatuaje-mici">
+    <div class="text mb-4">
+      Tatuajele mari pot fi dintre cele mai complexe. Intră la
+      <span>„full day”,</span> adică o zi sau chiar mai multe pe care le dedici
+      ședintelor de tatuat. <span>Fără grabă</span> sau treburi random de
+      rezolvat înainte sau după ori văitat inutil.
     </div>
+    <div class="text">
+      Deoarece avem un scop comun: tatuajul tău să fie terminat în
+      <span>cea mai bună versiune posibilă,</span> este necesar să fii în cea
+      mai bună formă a ta într-o asemenea zi. Află aici cum… LINK - catre ce
+      ?????? nece?
+    </div>
+  </div>
+  <div
+    class="lg:col-3 md:col-3 sm:col-12 flex align-items-center justify-content-center"
+  >
+    <img src="../../assets/MARI.png" alt="tatuaje-mici" />
+  </div>
 </div>
-<hr class="mt-4">
-<div class="photo-grid mb-8 mr-2 ml-2">
-    <div class="photo-item"><img src="../../assets/Mari/1.jpg" alt="Photo 1"></div>
-    <div class="photo-item"><img src="../../assets/Mari/2.jpg" alt="Photo 2"></div>
-    <div class="photo-item"><img src="../../assets/Mari/3.jpg" alt="Photo 3"></div>
-    <div class="photo-item"><img src="../../assets/Mari/4.jpg" alt="Photo 4"></div>
-
-    <div class="photo-item"><img src="../../assets/Mari/5.jpg" alt="Photo 5"></div>
-    <div class="photo-item"><img src="../../assets/Mari/6.jpg" alt="Photo 6"></div>
-    <div class="photo-item"><img src="../../assets/Mari/7.jpg" alt="Photo 7"></div>
-    <div class="photo-item"><img src="../../assets/Mari/8.jpg" alt="Photo 8"></div>
-
-    <div class="photo-item"><img src="../../assets/Mari/9.jpg" alt="Photo 9"></div>
-    <div class="photo-item"><img src="../../assets/Mari/10.jpg" alt="Photo 10"></div>
-    <div class="photo-item"><img src="../../assets/Mari/11.jpg" alt="Photo 11"></div>
-    <div class="photo-item"><img src="../../assets/Mari/12.jpg" alt="Photo 12"></div>
-    
-    <div class="photo-item"><img src="../../assets/Mari/13.jpg" alt="Photo 13"></div>
-    <div class="photo-item"><img src="../../assets/Mari/14.jpg" alt="Photo 14"></div>
-    <div class="photo-item"><img src="../../assets/Mari/15.jpg" alt="Photo 15"></div>
-    <div class="photo-item"><img src="../../assets/Mari/16.jpg" alt="Photo 16"></div>
-   
-    <div class="photo-item"><img src="../../assets/Mari/17.jpg" alt="Photo 17"></div>
-    <div class="photo-item"><img src="../../assets/Mari/18.jpg" alt="Photo 18"></div>
-    <div class="photo-item"><img src="../../assets/Mari/19.jpg" alt="Photo 19"></div>
-    <div class="photo-item"><img src="../../assets/Mari/20.jpg" alt="Photo 20"></div>
-
-    <div class="photo-item"><img src="../../assets/Mari/21.jpg" alt="Photo 21"></div>
-    <div class="photo-item"><img src="../../assets/Mari/22.jpg" alt="Photo 22"></div>
-    <div class="photo-item"><img src="../../assets/Mari/23.jpg" alt="Photo 23"></div>
-    <div class="photo-item"><img src="../../assets/Mari/24.jpg" alt="Photo 24"></div>
-
-    <div class="photo-item"><img src="../../assets/Mari/25.jpg" alt="Photo 25"></div>
-    <div class="photo-item"><img src="../../assets/Mari/26.jpg" alt="Photo 26"></div>
-    <div class="photo-item"><img src="../../assets/Mari/27.jpg" alt="Photo 27"></div>
-    <div class="photo-item"><img src="../../assets/Mari/28.jpg" alt="Photo 12"></div>
-    
-    <div class="photo-item"><img src="../../assets/Mari/29.jpg" alt="Photo 13"></div>
-    <div class="photo-item"><img src="../../assets/Mari/30.jpg" alt="Photo 14"></div>
-    <div class="photo-item"><img src="../../assets/Mari/31.jpg" alt="Photo 15"></div>
-    <div class="photo-item"><img src="../../assets/Mari/32.jpg" alt="Photo 16"></div>
-
-    <div class="photo-item"><img src="../../assets/Mari/33.jpg" alt="Photo 15"></div>
-    <div class="photo-item"><img src="../../assets/Mari/34.jpg" alt="Photo 16"></div>
-</div>
+<hr class="mt-4" />
+<app-gallery-lightbox
+  [galleryData]="data"
+  [showCount]="true"
+></app-gallery-lightbox>
 <app-contact></app-contact>
-<br>
-<br>
+<br />
+<br />
