@@ -109,7 +109,8 @@ import { PiercingComponent } from './piercing/piercing.component';
 import { EchipaComponent } from './echipa/echipa.component';
 import { CategoriiTatuajeComponent } from './categorii-tatuaje/categorii-tatuaje.component';
 import { GoogleMapsModule } from '@angular/google-maps';
-import { ToateCategoriileComponent } from './toate-categoriile/toate-categoriile.component'
+import { ToateCategoriileComponent } from './toate-categoriile/toate-categoriile.component';
+import { GalleryLightboxComponent } from './gallery-lightbox/gallery-lightbox.component'
 
 @NgModule({
   declarations: [
@@ -138,6 +139,7 @@ import { ToateCategoriileComponent } from './toate-categoriile/toate-categoriile
     EchipaComponent,
     CategoriiTatuajeComponent,
     ToateCategoriileComponent,
+    GalleryLightboxComponent,
   ],
   imports: [
     BrowserModule,
