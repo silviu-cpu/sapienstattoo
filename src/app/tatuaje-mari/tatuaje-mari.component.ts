@@ -143,7 +143,6 @@ export class TatuajeMariComponent {
     {
       imageSrc: "../../assets/Mari/34.jpg", 
       imageAlt: "Photo 34"
-    },
-
+    }
   ];
 }
