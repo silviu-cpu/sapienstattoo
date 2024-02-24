@@ -98,10 +98,6 @@ export class FeteComponent {
       imageAlt: "Photo 21"
     },
     {
-      imageSrc: "../../assets/Fete/22.jpg", 
-      imageAlt: "Photo 22"
-    },
-    {
       imageSrc: "../../assets/Fete/23.jpg", 
       imageAlt: "Photo 23"
     },

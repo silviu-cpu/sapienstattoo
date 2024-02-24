@@ -98,7 +98,7 @@ export class AppComponent {
                     routerLink: "match"
                 },
                 {
-                    label: 'Tatuaje scris',
+                    label: 'Tatuaje Scris',
                     routerLink: "scris"
                 }
             ]
