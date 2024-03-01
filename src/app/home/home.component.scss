@@ -1,107 +1,114 @@
 .text-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    overflow: hidden;
-    border-bottom: 1px solid white;
-    border-top: 1px solid white;
-    width: 80%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+  margin: 0 auto;
 }
 
 .marquee-text {
-    font-size: 23px;
-    text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: #fff;
-    text-stroke-color: #fff;
-    white-space: nowrap;
-    color: #B68116;
-    padding: 2rem 2rem;
-    letter-spacing: 1px;
-    animation: move-rtl 6000ms linear infinite;
-    animation-play-state: running;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: #fff;
+  text-stroke-color: #fff;
+  white-space: nowrap;
+  color: #b68116;
+  padding: 2rem 2rem;
+  letter-spacing: 1px;
+  animation: move-rtl 6000ms linear infinite;
+  animation-play-state: running;
 }
 
 .text-wrapper:hover .marquee-text {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 @keyframes move-rtl {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 .container {
-    text-align: center;
-    padding: 20px;
-    color: #fff;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
 }
 
 .sub-header {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .quote {
-    font-style: italic;
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-style: italic;
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .description {
-    text-align: center;
-    max-width: 800px;
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  text-align: center;
+  max-width: 800px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .span-style {
-    font-weight: bold;
-    color: #B68116;
+  font-weight: bold;
+  color: #b68116;
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    .sub-header {
-        font-size: 20px;
-    }
-    .quote {
-        font-size: 16px;
-    }
-    .description {
-        font-size: 14px;
-    }
-    .marquee-text {
-        font-size: 20px;
-    }
+  .container {
+    padding: 10px;
+  }
+  .sub-header {
+    font-size: 20px;
+  }
+  .quote {
+    font-size: 16px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .marquee-text {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 480px) {
-    .container {
-        padding: 5px;
-    }
-    .header {
-        font-size: 24px;
-    }
-    .sub-header {
-        font-size: 18px;
-    }
-    .quote {
-        font-size: 14px;
-    }
-    .description {
-        font-size: 12px;
-    }
-    .marquee-text {
-        font-size: 18px;
-    }
+  .container {
+    padding: 5px;
+  }
+  .header {
+    font-size: 24px;
+  }
+  .sub-header {
+    font-size: 18px;
+  }
+  .quote {
+    font-size: 14px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .marquee-text {
+    font-size: 18px;
+  }
+}
+
+.bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../../assets/bg.png) no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
 }

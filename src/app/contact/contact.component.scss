@@ -1,33 +1,61 @@
 .title {
-    font-size:38px;
-    color: #B68116;
+  font-size: 38px;
+  color: #b68116;
 }
 
 .phone {
-    font-size:38px;
-    text-decoration: underline;
+  font-size: 38px;
+  text-decoration: underline;
 }
 
 .address {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
-    .title {
-        font-size:30px;  
-    }
-    
-    .phone {
-        font-size:30px;
-    }   
+  .title {
+    font-size: 30px;
+  }
+
+  .phone {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 480px) {
-    .title {
-        font-size:26px;
-    }
-    
-    .phone {
-        font-size:26px;
-    }   
+  .title {
+    font-size: 26px;
+  }
+
+  .phone {
+    font-size: 26px;
+  }
+}
+
+.follow-us {
+  width: 100%;
+  color: white;
+  font-size: 35px;
+}
+
+.contact-container {
+  max-width: 1200px;
+
+  .title-contact {
+    font-size: 150px;
+    margin-top: -25px;
+    color: #b68116;
+  }
+
+  .title-portofolio {
+    font-size: 80px;
+  }
+
+  .title-acum {
+    font-size: 50px;
+  }
+
+  .title-mesaj {
+    font-size: 24px;
+  }
 }
