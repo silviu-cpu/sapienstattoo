@@ -17,12 +17,5 @@
   </head>
   <body>
     <app-root></app-root>
-    <script>
-      window.addEventListener("scroll", function () {
-        const scrolled = window.scrollY;
-        const parallaxBg = document.querySelector(".parallax-bg");
-        parallaxBg.style.backgroundPositionX = `${scrolled * 0.03}px`;
-      });
-    </script>
   </body>
 </html>

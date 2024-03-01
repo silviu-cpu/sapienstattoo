@@ -106,31 +106,13 @@
   }
 }
 
-.parallax-bg {
+.bg {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../../assets/bg.png) no-repeat;
-  background-size: 107%;
-  background-attachment: fixed;
-  background-position: 40% 10%;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: background-position-x 0.3s ease-out;
+  background-size: cover;
 }
 
-.parallax-content {
-  position: relative;
-  z-index: 1;
-  h1 {
-    font-size: 150px;
-    color: #b68116;
-  }
-}
-
-.parallax-container {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
+h1 {
+  font-size: 150px;
+  color: #b68116;
 }
