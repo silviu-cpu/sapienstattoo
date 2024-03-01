@@ -1,0 +1,25 @@
+.social-icons {
+  .icon {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+
+    margin-right: 10px;
+
+    i {
+      vertical-align: -webkit-baseline-middle;
+    }
+
+    &:hover {
+      color: #b68116;
+      transition: ease-in 0.4s;
+    }
+  }
+}
+
+:host ::ng-deep .p-menubar {
+  position: sticky;
+  position: -webkit-sticky;
+}

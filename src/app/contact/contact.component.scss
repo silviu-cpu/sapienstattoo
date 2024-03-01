@@ -60,3 +60,21 @@
     font-size: 24px;
   }
 }
+
+.social-icons {
+  .icon {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin-right: 30px;
+
+    i {
+      vertical-align: -webkit-baseline-middle;
+    }
+
+    &:hover {
+      color: #b68116;
+      transition: ease-in 0.4s;
+    }
+  }
+}

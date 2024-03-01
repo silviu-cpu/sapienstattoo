@@ -1,9 +1,40 @@
 <p-menubar [model]="items">
   <ng-template pTemplate="start">
-      <img routerLink="home" src="../assets/sapiens+simplu.png" height="75" width="150" class="mr-2" />
+    <img
+      routerLink="home"
+      src="../assets/sapiens+simplu.png"
+      height="75"
+      width="150"
+      class="mr-2"
+    />
   </ng-template>
-  <ng-template pTemplate="end">
-      Social Linkszs
+  <ng-template pTemplate="end" class="social-container">
+    <div class="social-icons">
+      <a
+        href="https://www.facebook.com/people/Sapiens-Tattoo-Bucuresti/61550576736624/"
+        target="_blank"
+        class="icon"
+        ><i class="fa-brands fa-facebook-f fa-xl"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/channel/UCH1B7np77K-j8hyDR27mEqg"
+        target="_blank"
+        class="icon"
+        ><i class="fa-brands fa-youtube fa-xl"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/sapiens_tattoo"
+        target="_blank"
+        class="icon"
+        ><i class="fa-brands fa-instagram fa-xl"></i
+      ></a>
+      <a
+        href="https://www.facebook.com/people/Sapiens-Tattoo-Bucuresti/61550576736624/"
+        target="_blank"
+        class="icon"
+        ><i class="fa-brands fa-tiktok fa-xl"></i
+      ></a>
+    </div>
   </ng-template>
 </p-menubar>
 <router-outlet></router-outlet>
