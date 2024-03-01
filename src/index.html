@@ -1,17 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Sapiens Tattoo</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://unpkg.com/primeflex/primeflex.css" rel="stylesheet" />
-  <link href="https://unpkg.com/primeicons/primeicons.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="/node_modules/primeng/resources/primeng.min.css" />
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-UGuX9RHqihJU2-SNJf99AkhEft2Vxk"></script>
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Sapiens Tattoo</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://unpkg.com/primeflex/primeflex.css" rel="stylesheet" />
+    <link href="https://unpkg.com/primeicons/primeicons.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/node_modules/primeng/resources/primeng.min.css"
+    />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr-UGuX9RHqihJU2-SNJf99AkhEft2Vxk"></script>
+  </head>
+  <body>
+    <app-root></app-root>
+    <script>
+      window.addEventListener("scroll", function () {
+        const scrolled = window.scrollY;
+        const parallaxBg = document.querySelector(".parallax-bg");
+        parallaxBg.style.backgroundPositionX = `${scrolled * 0.03}px`;
+      });
+    </script>
+  </body>
 </html>
