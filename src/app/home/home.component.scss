@@ -85,6 +85,16 @@
   .marquee-text {
     font-size: 20px;
   }
+  .header {
+    font-size: 74px;
+    margin-bottom: 40px;
+  }
+  .description2 {
+    font-size: 28px;
+  }
+  .description1 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -92,7 +102,7 @@
     padding: 5px;
   }
   .header {
-    font-size: 24px;
+    font-size: 44px;
   }
   .sub-header {
     font-size: 18px;
