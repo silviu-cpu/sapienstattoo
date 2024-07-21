@@ -8,6 +8,12 @@
     margin-right: 10px;
     margin-top: 13px;
 
+    &.whatsapp-icon {
+      animation: colorCycle 2s infinite; /* 2 seconds for each cycle, infinite loop */
+      border-radius: 50%;
+      border: 2px solid transparent;
+    }
+
     i {
       vertical-align: -webkit-baseline-middle;
     }
@@ -15,6 +21,7 @@
     &:hover {
       color: #b68116;
       transition: ease-in 0.4s;
+      cursor: pointer;
     }
   }
 }
@@ -47,4 +54,25 @@
 :host ::ng-deep .p-menubar {
   position: sticky;
   position: -webkit-sticky;
+}
+
+.sticky-menubar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes colorCycle {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #b68116;
+  }
+  100% {
+    color: #fff;
+  }
 }

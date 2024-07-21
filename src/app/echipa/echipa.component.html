@@ -1,1 +1,27 @@
-<p>echipa works!</p>
+<div class="flex align-items-center flex-column">
+  <h1 class="echipa-title mt-8 mb-8">We are Sapiens!</h1>
+  <p-carousel
+    [value]="products"
+    [numVisible]="3"
+    [numScroll]="1"
+    [responsiveOptions]="responsiveOptions"
+  >
+    <ng-template let-product pTemplate="item">
+      <div class="product-item">
+        <div class="product-item-content">
+          <div class="mb-3">
+            <img
+              src="../../assets/om.jpg"
+              [alt]="product.name"
+              class="product-image"
+            />
+          </div>
+          <div>
+            <h4 class="mb-1">{{ product.name }}</h4>
+            <h4 class="mb-1 mt-1">{{ product.description }}</h4>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>

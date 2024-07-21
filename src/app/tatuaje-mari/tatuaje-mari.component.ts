@@ -11,6 +11,9 @@ interface Item {
   styleUrls: ['./tatuaje-mari.component.scss']
 })
 export class TatuajeMariComponent {
+  ngOnInit(): void {
+    window.scrollTo(0, 0); // Ensure scrolling to top
+  }
   data: Item[] = [
     {
       imageSrc: "../../assets/Mari/1.jpg", 

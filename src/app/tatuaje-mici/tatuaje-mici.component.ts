@@ -12,7 +12,9 @@ interface Item {
 })
 
 export class TatuajeMiciComponent {
-
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
   data: Item[] = [
     {
       imageSrc: "../../assets/Mici/1.jpg", 

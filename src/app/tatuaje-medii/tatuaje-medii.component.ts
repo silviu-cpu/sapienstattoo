@@ -10,7 +10,11 @@ interface Item {
   templateUrl: './tatuaje-medii.component.html',
   styleUrls: ['./tatuaje-medii.component.scss']
 })
+
 export class TatuajeMediiComponent {
+  ngOnInit(): void {
+    window.scrollTo(0, 0); // Ensure scrolling to top
+  }
   data: Item[] = [
     {
       imageSrc: "../../assets/Medii/1.jpg", 

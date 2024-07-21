@@ -1,4 +1,4 @@
-<p-menubar [model]="items">
+<p-menubar [model]="items" class="sticky-menubar">
   <ng-template pTemplate="start">
     <img
       routerLink="home"
@@ -10,6 +10,14 @@
   </ng-template>
   <ng-template pTemplate="end" class="social-container">
     <div class="social-icons">
+      <a
+        href="https://wa.me/0732087298"
+        target="_blank"
+        title="Chat with us on Whatsapp"
+        class="icon whatsapp-icon"
+      >
+        <i class="fa-brands fa-whatsapp fa-xl"></i>
+      </a>
       <a
         href="https://www.facebook.com/people/Sapiens-Tattoo-Bucuresti/61550576736624/"
         target="_blank"
