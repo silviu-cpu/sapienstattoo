@@ -111,6 +111,7 @@ import { CategoriiTatuajeComponent } from './categorii-tatuaje/categorii-tatuaje
 import { GoogleMapsModule } from '@angular/google-maps';
 import { ToateCategoriileComponent } from './toate-categoriile/toate-categoriile.component';
 import { GalleryLightboxComponent } from './gallery-lightbox/gallery-lightbox.component'
+import { FACEBOOK_PIXEL_PROVIDER } from './facebook-pixel.provider';
 
 @NgModule({
   declarations: [
@@ -231,7 +232,7 @@ import { GalleryLightboxComponent } from './gallery-lightbox/gallery-lightbox.co
     AnimateModule,
     CardModule,
   ],
-  providers: [],
+  providers: [FACEBOOK_PIXEL_PROVIDER],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
