@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AnalyticsService } from '../google-analytics.service';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  constructor (private analyticsService: AnalyticsService) {
 
+  }
+
+  ngOnInit() {
+    this.analyticsService.trackEvent('Home Componenet loaded', 'Loaded into View' ,'Description');
+  }
 }
