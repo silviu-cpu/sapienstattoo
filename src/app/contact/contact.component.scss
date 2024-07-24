@@ -83,3 +83,37 @@
   min-height: 400px;
   min-width: 400px;
 }
+
+@media (max-width: 768px) {
+  .title-contact {
+    font-size: 74px !important;
+  }
+  .title-portofolio {
+    font-size: 22px !important;
+  }
+  .title-acum {
+    font-size: 20px !important;
+  }
+  .title-mesaj {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-contact {
+    font-size: 40px !important;
+  }
+  .title-portofolio {
+    font-size: 20px !important;
+  }
+  .title-acum {
+    font-size: 18px !important;
+  }
+  .title-mesaj {
+    font-size: 18px !important;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
