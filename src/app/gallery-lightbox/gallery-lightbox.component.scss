@@ -7,7 +7,6 @@
   position: relative;
   display: inline-block;
   padding: 25px;
-  z-index: 1001;
 
   .gallery {
     line-height: 0;
@@ -53,7 +52,7 @@
 
   .close-btn {
     position: absolute;
-    top: 0;
+    top: 68px;
     right: 0;
     padding: 0;
     color: #fff;
@@ -110,6 +109,10 @@
   .icon-prev,
   .icon-next {
     font-size: 30px;
+  }
+
+  .lightbox-img {
+    margin-top: 77px;
   }
 
   .lightbox-img img {
