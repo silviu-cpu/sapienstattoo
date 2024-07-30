@@ -121,4 +121,7 @@ export class AppComponent {
         },
     ];
 }
+openWhatsApp(): void {
+    window.open('https://wa.me/0732087298', '_blank');
+  }
 }

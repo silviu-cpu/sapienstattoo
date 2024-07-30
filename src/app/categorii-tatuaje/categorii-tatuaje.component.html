@@ -1,20 +1,22 @@
 <div class="grid">
-    <div class="col-4 flex flex-column align-items-center ">
-        <img [routerLink]="'/tatuaje-mici'" src="../assets/MICI.png" height="100%" width="50%"/>
-        <div class="title">Tatuaje mici</div>
-    </div>
-    <div class="col-4 flex flex-column align-items-center ">
-        <img [routerLink]="'/tatuaje-medii'" src="../assets/MEDII.png" height="100%" width="50%"/>
-        <div class="title">Tatuaje medi</div>
-     
-    </div>
-    <div class="col-4 flex  flex-column align-items-center " >
-        <img [routerLink]="'/tatuaje-mari'" src="../assets/MARI.png" height="100%" width="50%"/>
-        <div class="title">Tatuaje mari</div>
-    </div>
+  <div class="col col-12 md:col-4 flex flex-column align-items-center">
+    <img [routerLink]="'/tatuaje-mici'" src="../assets/MICI.png" />
+    <div class="title">Tatuaje mici</div>
+  </div>
+  <div class="col col-12 md:col-4 flex flex-column align-items-center">
+    <img [routerLink]="'/tatuaje-medii'" src="../assets/MEDII.png" />
+    <div class="title">Tatuaje medi</div>
+  </div>
+  <div class="col col-12 md:col-4 flex flex-column align-items-center">
+    <img [routerLink]="'/tatuaje-mari'" src="../assets/MARI.png" />
+    <div class="title">Tatuaje mari</div>
+  </div>
 </div>
 
 <div class="flex align-items-center justify-content-center mt-6">
-    <p-button [routerLink]="'/toate-categoriile'" label="Toate Categoriile" styleClass="p-button-outlined p-button-rounded"></p-button>
+  <p-button
+    [routerLink]="'/toate-categoriile'"
+    label="Toate Categoriile"
+    styleClass="p-button-outlined p-button-rounded"
+  ></p-button>
 </div>
-

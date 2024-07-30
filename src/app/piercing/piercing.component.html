@@ -1,9 +1,403 @@
 <div class="grid flex m-4">
   <div class="lg:col-8 md:col-8 sm:col-12">
-    <h1 class="title mb-2">Piercing</h1>
-
-    <h1 class="title mb-2">Lista preturi Piercing</h1>
-    <h1 class="title mb-2">Intrebari frecvente</h1>
+    <h1 class="title mb-6">Listă prețuri Piercing</h1>
+    <p-table [value]="piercings">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Tip Piercing</th>
+          <th>Preț</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-piercing>
+        <tr>
+          <td>{{ piercing.type }}</td>
+          <td>{{ piercing.price }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+    <h1 class="title mb-6 mt-6">Întrebări frecvente</h1>
+    <p-accordion class="w-full">
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-calendar mr-2"></i>
+            <span class="vertical-align-middle"
+              >Trebuie să îmi fac o programare?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Suntem bucuroși să te primim oricând în timpul programului, dar
+            acesta fiind flexibil, e de preferat să îți faci o programare pentru
+            a scurta timpul așteptării și a fii sigur că ne putem ocupa de tine.
+          </p></ng-template
+        >
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-search mr-2"></i>
+            <span class="vertical-align-middle">Cum mă programez?</span>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Vei curăța piercingul cu soluție salină și apoi vei adăuga o
+            cantitate mică de cremă Diprogenta pentru o periodă de aproximativ
+            14 zile. Acestea se realizează cu bețișoare de urechi cât mai
+            subțiri iar procesul se va repeta de două ori pe zi, nimic exagerat.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-heart-fill mr-2"></i>
+            <span class="vertical-align-middle"
+              >Trebuie să am peste 18 ani pentru a-mi face un piercing?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Nu, dar va trebui să vii însoțit de unul dintre părinți sau de
+            tutorele legal și să ai minim 14 ani împliniți. De asemenea, vom
+            avea nevoie de certificatul tău de naștere, buletinul tău și
+            buletinul părinteleui însoțitor.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-ban mr-2"></i>
+            <span class="vertical-align-middle"
+              >Faceți piercing-uri și la copii?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Nu dăm găuri în urechi bebelușilor! Considerăm că asta trebuie să
+            fie alegerea lor. Vă primim în salonul de piercing doar în situația
+            în care minorii au 14 ani împliniți și vin însoțiți de unul dintre
+            părinți.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-hourglass mr-2"></i>
+            <span class="vertical-align-middle">Cât de mult durează?</span>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Procedura de efectuare a pierce-ului durează câteva secunde, dar să
+            te aștepti la 20-30 de minute pentru că va trebui să discutăm
+            ”chestii”, în acest timp vom alege bijuteria iar sterilizarea
+            instrumentarului este absolut necesară.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-dollar mr-2"></i>
+            <span class="vertical-align-middle">Cât costă un piercing?</span>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">Vezi, mai sus lista de prețuri.</p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-question mr-2"></i>
+            <span class="vertical-align-middle"
+              >Mă va durea? Pot aplica cremă anestezică?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            În funcție de pierce-ul ce urmează a fi efectuat, durerea este mai
+            mult sau mai puțin intensă. Noi nu folosim cremă anestezică, dar
+            dacă tu vrei să folosești, ia în calcul că trebuie aplicată cu 20-30
+            de minute înainte de efectuarea procedurii de piercing și nu e
+            recomandat să faci asta de unul singur, ci tot la salon.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-ban mr-2"></i>
+            <span class="vertical-align-middle">Folosiți pistol?</span>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Nu, nu folosim și nu recomandăm. Tehnica efectuării unui piercing cu
+            pistolul poate fi traumatizantă în foarte multe cazuri deoarce
+            presupune un șoc mare pentru țesut și în unele zone este imposibil
+            de folosit. Pistolul se poate folosi doar în lobul urechii,cu toate
+            acestea îngrijirea și vindecarea piercingului este anevoioasă pentru
+            că bijuteria pentru pistol are tija mult prea scurtă și îngreunează
+            activitățile de îngrijire. Deși e lungă și urâtă, branula implică
+            cea mai prietenoasă metodă. Procedura de efectuare a piercing-ului
+            se efectuează cu o branulă sau ace speciale de piercing.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-info-circle mr-2"></i>
+            <span class="vertical-align-middle">Cum am grijă de pierce?</span>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Curățându-l cu soluție salină iar după îți vei aplica cremă
+            Diprogenta. Desigur, parte din îngrijirea lui sunt și următoarele:
+            nu ai voie să te joci cu bijuteria; să te atingi cu mâinile murdare;
+            să te duci la piscină, saună, solar; să aplici presiune pe pierce.
+            Fiecare tip de piercing este special și la fel este și îngrijirea.
+            Este important să ai grijă de piercing-ul tău și să îl cureți chiar
+            și dacă pare a fi vindecat.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-heart-fill mr-2"></i>
+            <span class="vertical-align-middle"
+              >Pot să îmi aduc propria bijuterie ?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Da, îți poți aduce propria bijuterie, dar dacă avem în vedere
+            efectuarea unui piercing și nu doar schimbarea bijuteriei inițiale
+            aceasta trebuie să aibă o anumită lungime, grosime și să fie
+            realizată dintr- un material agreat cum ar fi oțel medicinal sau
+            titanium. ATENȚIE: Putem refuza bijuteria ta dacă acesata, prin
+            forma și materialul ei, implică anumite riscuri pentru efectuarea
+            sau vindecarea piercing ului.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-info-circle mr-2"></i>
+            <span class="vertical-align-middle"
+              >Pot alege efectuarea piercingului cu o bijuterie de aur sau de
+              argint?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Dacă ai deja bijuteria achiziționată trebuie să ai în vedere ca
+            materialele să fie de calitate iar de preferat ar fi ca bijuteria
+            din aur să fie de 18 sau 24 karate. ATENȚIE: Unele persoane pot avea
+            reacții alergice la materialele prețioase. De aceea recomandăm
+            folosirea bijuteriilor standard de la salon.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-ban mr-2"></i>
+            <span class="vertical-align-middle"
+              >Am avut un piercing, dar gaura s-a astupat, puteți să îmi faceți
+              în același loc?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Da, desigur. În schimb, trebuie să fim siguri că zona este complet
+            vindecată.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-info-circle mr-2"></i>
+            <span class="vertical-align-middle"
+              >Din ce material îmi recomandați să fie bijuteria?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Oțel medicinal sau titan. Folosim bijuterii ”standard” pentru ca
+            operațiunea de piercing să fie cât mai simplu de efectuat și
+            vindecarea cât mai rapidă.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-info-circle mr-2"></i>
+            <span class="vertical-align-middle"
+              >Pierce-ul meu s-a infectat, să îl scot?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Înainte de a-l scoate, fă-ne o vizită pentru a vedea despre ce e
+            vorba, pierce-ul tău ar putea fi infectat, dar la fel de bine poate
+            fi și salvat.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-heart-fill mr-2"></i>
+            <span class="vertical-align-middle">Pot să mai vin cu cineva?</span>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Desigur, ne place să vedem și alți oameni iar pentru prietenii tăi
+            avem sala de așteptare. Cu toate acestea, nu putem găzdui toată
+            galeria echipei de volei.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-info-circle mr-2"></i>
+            <span class="vertical-align-middle"
+              >Cum îmi dau seama că pierce-ul meu s-a infectat?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            În situația în care zona este sensibilă, iritată și dureroasă îți
+            poți pune câteva întrebări despre o posibilă infecție, dar până să
+            renunți la el, fă-ne o vizită programată la salon.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-ban mr-2"></i>
+            <span class="vertical-align-middle"
+              >Trebuie să rotesc bijuteria frecvent?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Nu, nu este necesar să faci asta. Recomandarea aceasta este dată, de
+            regulă, celor ce aleg să își dea piercing cu pistolul.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-ban mr-2"></i>
+            <span class="vertical-align-middle"
+              >Pot să merg la piscină/solar/saună după ce mi-am făcut un
+              piercing?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">Nu, categoric nu.</p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-heart-fill mr-2"></i>
+            <span class="vertical-align-middle"
+              >Câte pierce-uri îmi pot face de-o dată?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Cât de multe îți dorești, dar tu vei fi răspunzător de îngrijirea
+            acestora, dar ține minte: cu cât sunt mai apropiate, cu atât va dura
+            mai mult vindecarea lor.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-hourglass mr-2"></i>
+            <span class="vertical-align-middle"
+              >Cât trebuie să aștept pentru a-mi schimba bijuteria
+              inițială?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            În funcție de stadiul vindecării și de zona ce a fost supusă
+            intervenției pot fi mai multe sau mai puține săptămâni, dar după
+            aproximativ o lună îți poți schimba bijuteria.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-heart-fill mr-2"></i>
+            <span class="vertical-align-middle"
+              >Ce se întamplă în timpul procedurii efectuării
+              piercing-ului?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Mai întâi ne asigurăm că ești relaxat și fără prea mari emoții. Te
+            pregătim psihologic. Zona unde urmază să fie efectuat piercing-ul va
+            fi curățată și marcată. Apoi îl efectuăm. Simplu. După care, stăm de
+            vorbă despre îngrijire.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+      <p-accordionTab>
+        <ng-template pTemplate="header">
+          <div class="flex align-items-center">
+            <i class="pi pi-hourglass mr-2"></i>
+            <span class="vertical-align-middle"
+              >Cat o sa dureze până mi se vindecă piercingul?</span
+            >
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <p class="m-0">
+            Nu îți putem spune cu exactitate când ți se va vindeca, dar îți
+            putem estima. Este extrem de important să urmezi sfaturile privind
+            îngrijirea piercingului pentru o vindecare mai rapidă.
+          </p>
+        </ng-template>
+      </p-accordionTab>
+    </p-accordion>
   </div>
 </div>
 <hr class="mt-4" />

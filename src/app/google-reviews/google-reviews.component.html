@@ -1,26 +1,40 @@
-<div class="flex justify-content-center">
-  <h2>Vorbeste lumea, pe google!</h2>
+<div class="flex align-items-center p-2 flex-column">
+  <h2>Vorbeste lumea, pe Google!</h2>
+  <h3 class="mt-4">Vezi toate review-urile de pe Google</h3>
+  <a
+    target="_blank"
+    href="https://www.google.com/maps/place/Sapiens+Tattoo+Bucuresti/@44.4236813,26.1605015,16z/data=!4m14!1m5!8m4!1e1!2s113429739776788404415!3m1!1e1!3m7!1s0x40b1ff1594aa4f75:0x4569855400a69c2!8m2!3d44.423948!4d26.1582616!9m1!1b1!16s%2Fg%2F11fhn3d478?entry=ttu"
+    >AICI</a
+  >
 </div>
+
 <div class="grid justify-content-center mt-6">
-    <div class="lg:col-2 sm:col-12 md:col-12 " *ngFor="let review of reviews">
-      <p-card>
-        <div *ngIf="review.profile_photo_url" class="p-card-header">
-            <img [src]="review.profile_photo_url" alt="Profile Photo">
+  <p-carousel
+    [value]="reviews"
+    [numVisible]="3"
+    [numScroll]="1"
+    [responsiveOptions]="responsiveOptions"
+  >
+    <ng-template let-review pTemplate="item">
+      <div class="review-item">
+        <p-card>
+          <div *ngIf="review.profile_photo_url" class="p-card-header">
+            <img
+              [src]="review.profile_photo_url"
+              alt="Profile Photo"
+              class="review-profile-photo"
+            />
           </div>
-        <div class="card-header">
-          Author: {{ review.author_name }}
-        </div>
-        <div class="card-body">
-          <p>Rating: {{ review.rating }} / 5</p>
-          <p>Text: {{ review.text }}</p>
-        </div>
-        <div>
-            Tune ago: {{ review.relative_time_description }}
-        </div>
-        <div>
-            Go to review : <a href="{{ review.author_url }}" target="_blank">Go To Review</a>
-        </div>
-      </p-card>
-    </div>
-  </div>
-  
+          <div class="card-header">{{ review.author_name }}</div>
+          <div class="card-body">
+            <p>{{ review.rating }} / 5</p>
+            <p>{{ review.text }}</p>
+          </div>
+          <div>
+            <a [href]="review.author_url" target="_blank">Go To Review</a>
+          </div>
+        </p-card>
+      </div>
+    </ng-template>
+  </p-carousel>
+</div>

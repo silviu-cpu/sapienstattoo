@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./toate-categoriile.component.scss']
 })
 export class ToateCategoriileComponent {
-
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }

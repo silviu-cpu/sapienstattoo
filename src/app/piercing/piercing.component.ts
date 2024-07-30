@@ -5,6 +5,11 @@ interface Item {
   imageAlt: string;
 }
 
+interface Piercing {
+  type: string;
+  price: string;
+}
+
 @Component({
   selector: 'app-piercing',
   templateUrl: './piercing.component.html',
@@ -192,5 +197,25 @@ export class PiercingComponent {
       imageSrc: "../../assets/Piercing/25.png", 
       imageAlt: "Photo 45"
     }
+  ];
+  piercings: Piercing[] = [
+    { type: 'Piercing Lob', price: '100 Ron' },
+    { type: 'Piercing Helix cartilaj', price: '130 Ron' },
+    { type: 'Piercing Conch', price: '140 Ron' },
+    { type: 'Piercing Tragus', price: '140 Ron' },
+    { type: 'Piercing Anti-Tragus', price: '140 Ron' },
+    { type: 'Piercing Industrial', price: '150 Ron' },
+    { type: 'Piercing Snug', price: '140 Ron' },
+    { type: 'Piercing Rook', price: '150 Ron' },
+    { type: 'Piercing Flat', price: '150 Ron' },
+    { type: 'Piercing Nas', price: '140 Ron' },
+    { type: 'Piercing Septum', price: '150 Ron' },
+    { type: 'Piercing Sprânceană', price: '140 Ron' },
+    { type: 'Piercing Buză', price: '150 Ron' },
+    { type: 'Piercing Limbă', price: '150 Ron' },
+    { type: 'Piercing Smiley', price: '150 Ron' },
+    { type: 'Piercing Buric', price: '150 Ron' },
+    { type: 'Piercing Sfârc', price: '160 Ron' },
+    { type: 'Schimbare, Verificare, Curățare Piercing', price: '30 Ron' }
   ];
 }

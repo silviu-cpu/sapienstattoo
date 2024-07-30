@@ -20,4 +20,8 @@ export class ContactComponent {
     if(event.latLng != null) 
     this.display = (event.latLng.toJSON())
   }
+  
+  openWhatsApp(): void {
+    window.open('https://wa.me/0732087298', '_blank');
+  }
 }

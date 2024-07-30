@@ -117,3 +117,23 @@
 .w-100 {
   width: 100%;
 }
+
+.alerta {
+  animation: colorCycle 2s infinite;
+}
+
+@keyframes colorCycle {
+  0% {
+    color: #fff;
+  }
+  50% {
+    color: #b68116;
+  }
+  100% {
+    color: #fff;
+  }
+}
+
+button {
+  background-color: gray;
+}
